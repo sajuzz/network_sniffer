@@ -1,0 +1,26 @@
+How It Works
+
+    Packet Capture:
+        The sniff function listens to packets on a specified network interface.
+        A callback function (packet_callback) processes each packet.
+
+    Packet Analysis:
+        Checks if the packet contains an IP layer.
+        Extracts and displays source IP, destination IP, protocol, and a truncated payload (first 50 bytes).
+
+    Ethical Use:
+        Includes a disclaimer about ensuring permissions before using the tool.
+        Suitable for educational and learning purposes only.
+
+Instructions to Run
+
+    Install dependencies:
+
+pip install scapy
+
+Run the script with administrative privileges (required for sniffing network packets):
+
+sudo python packet_sniffer.py -i <network_interface>
+
+Replace <network_interface> with your network interface (e.g., eth0, wlan0).
+
